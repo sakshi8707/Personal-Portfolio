@@ -1,0 +1,220 @@
+.notification-root {
+    position: fixed;
+    background: var(--color-dark-accent);
+    width: 100vw;
+    padding: 1em;
+  }
+  
+  .notification-body {
+    margin: auto;
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .notification-msg {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 100;
+  }
+  
+  .notification-accept,
+  .notification-reject {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+  
+  .notification-accept {
+    background: #34916faa;
+    margin: 0 5px;
+  }
+  
+  .notification-reject {
+    background: #b13e53aa;
+    margin: 0 5px;
+  }
+  
+  .notification-btn:hover {
+    cursor: pointer;
+  }
+  
+  .notification-pref {
+    font-size: 0.8em;
+  }
+  
+  .notification-pref:hover {
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .notification-body {
+      width: 100vw;
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .notification-btn-wrapper.view-on {
+      display: flex;
+      flex-direction: column;
+      margin-right: 1em;
+    }
+  
+    .notification-accept,
+    .notification-reject {
+      margin-bottom: 7px;
+    }
+  
+    .notification-msg-content {
+      padding-top: 7px;
+    }
+  }
+  
+  
+
+  /* **type writer** */
+  .type-writer {
+  }
+  .container .text {
+    position: relative;
+    font-weight: 300;
+    font-size: 4.8vh;
+    margin-left: -8px;
+   
+    font-family: "jetbrains Mono", monospace;
+  }
+
+  
+  @keyframes animate {
+    40%,
+    60% {
+      left: 100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  /* ---------------------------------------- */
+ 
+
+  h1,
+  p {
+    color: var(--color-dark-font);
+    font-family: "jetbrains Mono", monospace;
+   
+    line-height: 1.5rem;
+  }
+
+
+  .info-content {
+    font-family: "Rubik", sans-serif;
+    min-height: 100vh;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+  }
+  .portfolio-root {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    gap: 10px;
+  }
+  
+  .portfolio-elem-2,
+  .portfolio-elem-4 {
+    text-align: center;
+  }
+
+  .portfolio-elem-2 {
+    grid-row: span 2;
+  }
+
+
+  .ps {
+    border-radius: 13px;
+  }
+  .single-title {
+    text-align: left;
+  }
+  .portfolio-elem-separator {
+    width: 0;
+    height: 0.2em;
+    border-radius: 2px;
+    transition: width 0.3s ease-in;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+  }
+
+  .portfolio-elem {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  .portfolio-vertical {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .portfolio-elem-separator {
+    width: 0;
+    height: 0.2em;
+    border-radius: 2px;
+    transition: width 0.3s ease-in;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+  }
+  .portfolio-elem-2 {
+    grid-area: elem2;
+  }
+  .portfolio-elem-1 {
+    grid-area: elem1;
+  }
+  .ps {
+    --color-dark-gradient: linear-gradient(
+      31deg,
+      rgb(0, 0, 0, 0.7) 7%,
+      rgb(80, 80, 80, 0.7) 65%,
+      hsl(0 0% 62.7% / 0.7)
+    );
+  }
+  .portfolio-elem:hover {
+    cursor: pointer;
+  }
+  /* **footer section** */
+  .footer-root {
+    border-top: 1px solid;
+    width: 80vh;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .social-row {
+    gap: 2.2rem;
+  }
+  .social-row {
+    width: 100%;
+    font-size: 2em;
+  }
+  .footer-mesg {
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 2.2vh;
+  }
+  .txt,
+  .portfolio-vertical-elem {
+    font-family: "Jetbrains Mono", monospace;
+  }
+
+  /* **media query** */
+  
+  @media only screen and (max-width: 600px) {
+    .entire-container {
+      text-align: left; 
+    }
+  } 
+  
