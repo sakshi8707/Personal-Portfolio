@@ -12,13 +12,13 @@
   /** right navbar work  **/
 
 
-  /* CSS for Top Navbar (already working) */
+
 .navbar-top {
-  /* transition: transform 0.6s linear; */
+
   transition: transform 0.6s ease-in-out;
 }
 
-/* CSS for Right Navbar (fix transition) */
+
 .navbar-right {
   transition: transform 0.5s linear;
   transform: translateY(0vh); 
@@ -57,7 +57,7 @@
     background: var(--color-dark-accent);
     color: var(--color-dark-bg);
     transform: translateY(-100vh);
-    /* transition: transform var(--navbar-anim-time) linear; */
+   
   }
 
   
