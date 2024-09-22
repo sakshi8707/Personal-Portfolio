@@ -3,17 +3,88 @@
   margin: 0 auto;
   padding: 4em 0;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
-  "elem1 elem1 elem2 elem3" 
-  "elem4 elem5 elem2 elem6" 
-  "elem4 elem7 elem7 elem8";
-  grid-auto-columns: minmax(10em,auto);
-  grid-auto-rows: minmax(14em,auto);
-  grid-gap: .5em;
-  gap: .5em;
-  transition: filter .7s ease-in;
+    "elem1 elem1 elem2 elem3"
+    "elem4 elem5 elem2 elem6"
+    "elem4 elem7 elem7 elem8";
+  grid-auto-columns: minmax(10em, auto);
+  grid-auto-rows: minmax(14em, auto);
+  grid-gap: 0.5em;
+  gap: 0.5em;
+  transition: filter 0.7s ease-in;
 }
+
+.modal-description a {
+  color: rgba(20, 9, 122, 0.795);
+  /* color: yellow; */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.modal-description a:hover {
+  /* color: #6a0dad; */
+  color: yellow;
+}
+.title {
+  font-size: 1.2rem;
+}
+
+.modal-description p {
+  margin-top: 3rem;
+}
+
+.dev-icons {
+  font-size: 2rem;
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+  text-align: center;
+}
+.software-skill-inline > i {
+  color: hsl(210, 52%, 89%);
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effect */
+}
+
+.software-skill-inline:hover > i {
+  color: purple; /* Change the color to purple on hover */
+  transform: scale(1.4); 
+}
+
+.software-skill-inline > p {
+  color: #cfd9e4;
+  font-size: 10px;
+  transition: color 0.3s ease; 
+}
+
+.software-skill-inline:hover > p {
+  color: purple; 
+}
+
+
+
+.software-skill-inline {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.software-skill-inline>p {
+    color: #c7d3e0;
+    font-size: 10px;
+     transition: color 0.3s ease; 
+}
+
+.platform-icon {
+  width: 50px; 
+  height: auto;
+  margin: 0 10px; 
+  transition: transform 0.3s;
+}
+.leetcode-icon {
+  width: 50px; /* Size for LeetCode */
+}
+
 
 @media only screen and (max-width: 1200px) {
   .portfolio-root {
@@ -55,5 +126,3 @@
       "elem8";
   }
 }
-
-
