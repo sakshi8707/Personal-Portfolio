@@ -9,7 +9,22 @@
   .navbar-root.view-off {
     display: none;
   }
-  
+  /** right navbar work  **/
+
+
+  /* CSS for Top Navbar (already working) */
+.navbar-top {
+  /* transition: transform 0.6s linear; */
+  transition: transform 0.6s ease-in-out;
+}
+
+/* CSS for Right Navbar (fix transition) */
+.navbar-right {
+  transition: transform 0.5s linear;
+  transform: translateY(0vh); 
+}
+
+
   .navbar-top {
     position: fixed;
     display: flex;
@@ -28,6 +43,22 @@
     transition: transform var(--nav-anim-time) linear;
   }
   
+    .navbar-right {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    /* height: 100vh; */
+    width: 3.55em;
+    z-index: 7;
+    background: var(--color-dark-accent);
+    color: var(--color-dark-bg);
+    transform: translateY(-100vh);
+    /* transition: transform var(--navbar-anim-time) linear; */
+  }
 
   
   .navbar-core {
@@ -64,22 +95,7 @@
     cursor: not-allowed;
   }
   
-  .navbar-right {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 3.55em;
-    z-index: 7;
-    background: var(--color-dark-accent);
-    color: var(--color-dark-bg);
-    transform: translateY(-100vh);
-    transition: transform var(--navbar-anim-time) linear;
-  }
+
   
   .navbar-page-elem-wrapper {
     display: flex;
