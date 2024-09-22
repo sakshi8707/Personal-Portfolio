@@ -2,7 +2,7 @@
 const text = document.querySelector(".sec-text");
 const Text = document.querySelector(".text");
 
-const textt = "hi.";
+const textt = "Hi.";
 const speed = 100;
 
 function typeWriter() {
@@ -21,8 +21,6 @@ function typeWriter() {
 }
 
 typeWriter();
-
-// changing button text on hover in JavaScript e
 
 // *Navbar*
 const plusIcon = document.querySelector(".plus-icon");
